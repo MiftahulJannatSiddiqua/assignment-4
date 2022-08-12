@@ -1,5 +1,5 @@
 // ============== problem-3 =============
-// %%%%%%%%%%% radianToDegree %%%%%%%%%%%
+// %%%%%%%%%%%%%% oilPrice %%%%%%%%%%%%%%
 
 function oilPrice(diesel, petrol, octane){
     if (typeof (diesel && petrol && octane) == 'number'){
