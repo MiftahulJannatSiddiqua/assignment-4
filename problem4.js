@@ -9,7 +9,7 @@ function publicBusFare(people){
         return busFare;
     }
     else{
-        return 'you can try with number of people!'
+        return 'you can try with number of people!';
     }
 }
 const numberOfPeople = publicBusFare(365);

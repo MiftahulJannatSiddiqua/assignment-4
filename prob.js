@@ -1,19 +1,21 @@
-function publicBusFare(person) {
 
-    if (typeof person === 'number') {
-        // Each bus capacity = 50 person!
-        let afterBus = person % 50;
-
-        // Each micro bus capacity = 11 person!
-        let afterMicroBus = afterBus % 11;
-
-        // Public bus fare per person = 250tk.
-        busFare = afterMicroBus * 250;
-
-        return busFare;
+function isBestFriend(friend1, friend2) {
+    if (typeof friend1 === 'object' && typeof friend2 === 'object') {
+        if (friend1.name === friend2.friend && friend2.name === friend1.friend) {
+            return true;
+        }
+        else {
+            return false;
+        }
     } else {
-        return "Please input valid Passenger Number";
+        return " Please input a valid object!"
     }
 }
-let vung = publicBusFare(112);
-console.log(vung);
+
+// two objects----
+let friend1 = { name: 3, friend: 'rakib' };
+let friend2 = { name: 'rakib', friend: 3 };
+
+// Return values (Function)
+let BestfriendOrNot = isBestFriend(friend1, friend2);
+console.log(BestfriendOrNot);
